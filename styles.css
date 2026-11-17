@@ -410,6 +410,10 @@ a:focus-visible {
   letter-spacing: -0.08em;
 }
 
+.hero-name-last-letter {
+  margin-inline-start: 0.08em;
+}
+
 .hero-tagline {
   display: flex;
   flex-direction: column;
