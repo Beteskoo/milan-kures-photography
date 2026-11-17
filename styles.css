@@ -2294,7 +2294,7 @@ body.language-entering [data-i18n]:not(.skip-link) {
   font-size: clamp(4.2rem, 10vw, 10rem);
   font-weight: 400;
   letter-spacing: -0.055em;
-  line-height: 0.82;
+  line-height: 1.06;
 }
 
 .location-hero-lead {
@@ -2334,8 +2334,8 @@ body.language-entering [data-i18n]:not(.skip-link) {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(3.2rem, 6.3vw, 7rem);
   font-weight: 400;
-  letter-spacing: -0.055em;
-  line-height: 0.92;
+  letter-spacing: calc(-0.055em + 1px);
+  line-height: 1.08;
 }
 
 .location-gallery-heading > p {
