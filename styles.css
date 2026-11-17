@@ -394,7 +394,7 @@ a:focus-visible {
   font-size: clamp(4.5rem, 10.3vw, 10.5rem);
   font-weight: 300;
   letter-spacing: -0.075em;
-  line-height: 0.73;
+  line-height: 1.06;
 }
 
 .hero-name-first {
@@ -712,6 +712,11 @@ a:focus-visible {
   align-items: end;
   justify-content: space-between;
   gap: 48px;
+}
+
+.gallery-section .section-heading h2 {
+  letter-spacing: calc(-0.055em + 1px);
+  line-height: 1.08;
 }
 
 .section-heading .section-kicker {
@@ -1975,7 +1980,6 @@ body.language-entering [data-i18n]:not(.skip-link) {
 
   .hero h1 {
     font-size: clamp(3.9rem, 20vw, 6.4rem);
-    line-height: 0.78;
   }
 
   .hero-overline {
