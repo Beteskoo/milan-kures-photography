@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0d1b13">
+    <meta name="description" content="Fotografické kolekce Milana Kureše uspořádané podle lokalit.">
+    <title>Galerie podle lokalit | Milan Kureš</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script>document.documentElement.classList.add('js');</script>
+  </head>
+  <body class="gallery-page">
+    <a class="skip-link" href="#main-content" data-i18n="skipLink">Přejít na obsah</a>
+
+    <header class="site-header" id="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="./index.html#uvod" aria-label="Milan Kureš, úvod">
+          <span class="brand-name">MILAN KUREŠ</span>
+          <span class="brand-subtitle" data-i18n="brandSubtitle">BIRD &amp; NATURE PHOTOGRAPHER</span>
+        </a>
+
+        <nav class="site-nav" id="site-nav" data-i18n-aria-label="mainNavLabel" aria-label="Hlavní navigace">
+          <a href="./index.html#uvod" data-i18n="navHome">Úvod</a>
+          <a href="./galerie.html" data-i18n="navGallery" aria-current="page">Galerie</a>
+          <a href="./index.html#atlas" data-i18n="navAtlas">Ptačí atlas</a>
+          <a href="./o-mne.html" data-i18n="navAbout">O mně</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="language-switcher" role="group" data-i18n-aria-label="languageLabel" aria-label="Zvolit jazyk">
+            <button class="language-button is-active" type="button" data-language="cs" aria-pressed="true" aria-label="Čeština" title="Čeština">
+              <svg class="flag-svg" viewBox="0 0 30 20" aria-hidden="true" focusable="false">
+                <rect width="30" height="10" fill="#fff"></rect>
+                <rect y="10" width="30" height="10" fill="#d7141a"></rect>
+                <path d="M0 0 14 10 0 20Z" fill="#11457e"></path>
+              </svg>
+              <span class="language-code">CS</span>
+            </button>
+            <button class="language-button" type="button" data-language="de" aria-pressed="false" aria-label="Deutsch" title="Deutsch">
+              <svg class="flag-svg" viewBox="0 0 30 20" aria-hidden="true" focusable="false">
+                <rect width="30" height="6.67" fill="#181818"></rect>
+                <rect y="6.67" width="30" height="6.67" fill="#dd1e2f"></rect>
+                <rect y="13.34" width="30" height="6.66" fill="#ffce00"></rect>
+              </svg>
+              <span class="language-code">DE</span>
+            </button>
+            <button class="language-button" type="button" data-language="en" aria-pressed="false" aria-label="English" title="English">
+              <svg class="flag-svg" viewBox="0 0 30 20" aria-hidden="true" focusable="false">
+                <rect width="30" height="20" fill="#21468b"></rect>
+                <path d="M0 0 30 20M30 0 0 20" stroke="#fff" stroke-width="5"></path>
+                <path d="M0 0 30 20M30 0 0 20" stroke="#cf142b" stroke-width="2"></path>
+                <path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"></path>
+                <path d="M15 0v20M0 10h30" stroke="#cf142b" stroke-width="3.4"></path>
+              </svg>
+              <span class="language-code">EN</span>
+            </button>
+          </div>
+
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n-aria-label="menuOpenLabel" aria-label="Otevřít menu">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="location-hero" id="galerie-top" aria-labelledby="location-hero-title">
+        <img class="location-hero-image" src="./assets/locations/norsko/02.jpg" alt="" fetchpriority="high">
+        <div class="location-hero-shade" aria-hidden="true"></div>
+        <div class="content-width location-hero-content">
+          <p class="section-kicker section-kicker-light" data-i18n="heroKicker">KOLEKCE PODLE LOKALITY</p>
+          <h1 id="location-hero-title" data-i18n="heroTitle">Výpravy v obrazech</h1>
+          <p class="location-hero-lead" data-i18n="heroLead">Osm míst. Jeden pohled na přírodu.</p>
+          <p class="location-hero-count" data-i18n="heroCount">8 lokalit · 16 fotografií</p>
+        </div>
+        <a class="scroll-cue" href="#kolekce">
+          <span data-i18n="discoverCollections">Procházet kolekce</span>
+          <span class="scroll-line" aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <section class="location-gallery" id="kolekce" aria-labelledby="collections-title">
+        <div class="content-width location-gallery-heading reveal">
+          <div>
+            <p class="section-kicker" data-i18n="collectionsKicker">CESTY A DOMOV</p>
+            <h2 id="collections-title" data-i18n="collectionsTitle">Galerie podle místa</h2>
+          </div>
+          <p data-i18n="collectionsIntro">Každá složka zůstává samostatnou kolekcí. Názvy druhů, data a přesná místa doplníme až z ověřených podkladů.</p>
+        </div>
+
+        <div class="location-toolbar-shell">
+          <div class="content-width location-toolbar">
+            <div class="location-filter-list" role="group" data-i18n-aria-label="filterLabel" aria-label="Filtrovat podle lokality">
+              <button class="location-filter is-active" type="button" data-location-filter="vse" aria-pressed="true" data-i18n="filterAll">Vše</button>
+              <button class="location-filter" type="button" data-location-filter="madeira" aria-pressed="false" data-i18n="locMadeira">Madeira</button>
+              <button class="location-filter" type="button" data-location-filter="spanelsko" aria-pressed="false" data-i18n="locSpain">Španělsko</button>
+              <button class="location-filter" type="button" data-location-filter="domovina-ceska" aria-pressed="false" data-i18n="locCzechia">Domovina česká</button>
+              <button class="location-filter" type="button" data-location-filter="norsko" aria-pressed="false" data-i18n="locNorway">Norsko</button>
+              <button class="location-filter" type="button" data-location-filter="uganda" aria-pressed="false" data-i18n="locUganda">Uganda</button>
+              <button class="location-filter" type="button" data-location-filter="borneo" aria-pressed="false" data-i18n="locBorneo">Borneo</button>
+              <button class="location-filter" type="button" data-location-filter="singapur" aria-pressed="false" data-i18n="locSingapore">Singapur</button>
+              <button class="location-filter" type="button" data-location-filter="costarika" aria-pressed="false" data-i18n="locCostaRica">Kostarika</button>
+            </div>
+            <span class="location-status" id="location-status" aria-live="polite">8 lokalit, 16 fotografií</span>
+          </div>
+        </div>
+
+        <div class="location-collection-list">
+          <section class="location-collection" id="madeira" data-location="madeira" aria-labelledby="madeira-title">
+            <div class="content-width">
+              <header class="location-collection-heading reveal">
+                <span class="location-index">01</span>
+                <div><p data-i18n="collectionLabel">LOKALITA</p><h2 id="madeira-title" data-i18n="locMadeira">Madeira</h2></div>
+                <span data-i18n="twoPhotos">2 fotografie</span>
+              </header>
+              <div class="location-photo-grid">
+                <button class="location-photo-card reveal" type="button" data-location-key="locMadeira" data-sequence="01" data-full="./assets/madeira/web/dsc-4094.webp" data-product-id="madeira-01">
+                  <img src="./assets/madeira/web/dsc-4094.webp" alt="" loading="lazy" decoding="async">
+                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locMadeira">Madeira</small><strong>01</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                </button>
+                <button class="location-photo-card reveal" type="button" data-location-key="locMadeira" data-sequence="02" data-full="./assets/madeira/web/img-0983.webp" data-product-id="madeira-02">
+                  <img src="./assets/madeira/web/img-0983.webp" alt="" loading="lazy" decoding="async">
+                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locMadeira">Madeira</small><strong>02</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="location-collection" id="spanelsko" data-location="spanelsko" aria-labelledby="spanelsko-title">
+            <div class="content-width">
+              <header class="location-collection-heading reveal">
+                <span class="location-index">02</span>
+                <div><p data-i18n="collectionLabel">LOKALITA</p><h2 id="spanelsko-title" data-i18n="locSpain">Španělsko</h2></div>
+                <span data-i18n="twoPhotos">2 fotografie</span>
+              </header>
+              <div class="location-photo-grid">
+                <button class="location-photo-card reveal" type="button" data-location-key="locSpain" data-sequence="01" data-full="./assets/locations/spanelsko/01.jpg" data-product-id="spanelsko-01">
+                  <img src="./assets/locations/spanelsko/01.jpg" alt="" loading="lazy" decoding="async">
+                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locSpain">Španělsko</small><strong>01</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                </button>
+                <button class="location-photo-card reveal" type="button" data-location-key="locSpain" data-sequence="02" data-full="./assets/locations/spanelsko/02.jpg" data-product-id="spanelsko-02">
+                  <img src="./assets/locations/spanelsko/02.jpg" alt="" loading="lazy" decoding="async">
+                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locSpain">Španělsko</small><strong>02</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="location-collection" id="domovina-ceska" data-location="domovina-ceska" aria-labelledby="domovina-title">
+            <div class="content-width">
+              <header class="location-collection-heading reveal">
+                <span class="location-index">03</span>
+                <div><p data-i18n="collectionLabel">LOKALITA</p><h2 id="domovina-title" data-i18n="locCzechia">Domovina česká</h2></div>
+                <span data-i18n="twoPhotos">2 fotografie</span>
+              </header>
+              <div class="location-photo-grid">
+                <button class="location-photo-card reveal" type="button" data-location-key="locCzechia" data-sequence="01" data-full="./assets/locations/domovina-ceska/01.jpg" data-product-id="domovina-ceska-01">
+                  <img src="./assets/locations/domovina-ceska/01.jpg" alt="" loading="lazy" decoding="async">
+                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locCzechia">Domovina česká</small><strong>01</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                </button>
+                <button class="location-photo-card reveal" type="button" data-location-key="locCzechia" data-sequence="02" data-full="./assets/locations/domovina-ceska/02.jpg" data-product-id="domovina-ceska-02">
+                  <img src="./assets/locations/domovina-ceska/02.jpg" alt="" loading="lazy" decoding="async">
+                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locCzechia">Domovina česká</small><strong>02</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="location-collection" id="norsko" data-location="norsko" aria-labelledby="norsko-title">
+            <div class="content-width">
+              <header class="location-collection-heading reveal">
+                <span class="location-index">04</span>
+                <div><p data-i18n="collectionLabel">LOKALITA</p><h2 id="norsko-title" data-i18n="locNorway">Norsko</h2></div>
+                <span data-i18n="twoPhotos">2 fotografie</span>
+              </header>
+              <div class="location-photo-grid">
+                <button class="location-photo-card reveal" type="button" data-location-key="locNorway" data-sequence="01" data-full="./assets/locations/norsko/01.jpg" data-product-id="norsko-01">
+                  <img src="./assets/locations/norsko/01.jpg" alt="" loading="lazy" decoding="async">
+                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locNorway">Norsko</small><strong>01</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                </button>
+                <button class="location-photo-card reveal" type="button" data-location-key="locNorway" data-sequence="02" data-full="./assets/locations/norsko/02.jpg" data-product-id="norsko-02">
+                  <img src="./assets/locations/norsko/02.jpg" alt="" loading="lazy" decoding="async">
+                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locNorway">Norsko</small><strong>02</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="location-collection" id="uganda" data-location="uganda" aria-labelledby="uganda-title">
+            <div class="content-width">
+              <header class="location-collection-heading reveal">
+                <span class="location-index">05</span>
+                <div><p data-i18n="collectionLabel">LOKALITA</p><h2 id="uganda-title" data-i18n="locUganda">Uganda</h2></div>
+                <span data-i18n="twoPhotos">2 fotografie</span>
+              </header>
+              <div class="location-photo-grid">
+                <button class="location-photo-card reveal" type="button" data-location-key="locUganda" data-sequence="01" data-full="./assets/locations/uganda/01.jpg" data-product-id="uganda-01">
+                  <img src="./assets/locations/uganda/01.jpg" alt="" loading="lazy" decoding="async">
+                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locUganda">Uganda</small><strong>01</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                </button>
+                <button class="location-photo-card reveal" type="button" data-location-key="locUganda" data-sequence="02" data-full="./assets/locations/uganda/02.jpg" data-product-id="uganda-02">
+                  <img src="./assets/locations/uganda/02.jpg" alt="" loading="lazy" decoding="async">
+                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locUganda">Uganda</small><strong>02</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="location-collection" id="borneo" data-location="borneo" aria-labelledby="borneo-title">
+            <div class="content-width">
+              <header class="location-collection-heading reveal">
+                <span class="location-index">06</span>
+                <div><p data-i18n="collectionLabel">LOKALITA</p><h2 id="borneo-title" data-i18n="locBorneo">Borneo</h2></div>
+                <span data-i18n="twoPhotos">2 fotografie</span>
+              </header>
+              <div class="location-photo-grid">
+                <button class="location-photo-card reveal" type="button" data-location-key="locBorneo" data-sequence="01" data-full="./assets/locations/borneo/01.jpg" data-product-id="borneo-01">
+                  <img src="./assets/locations/borneo/01.jpg" alt="" loading="lazy" decoding="async">
+                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locBorneo">Borneo</small><strong>01</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                </button>
+                <button class="location-photo-card reveal" type="button" data-location-key="locBorneo" data-sequence="02" data-full="./assets/locations/borneo/02.jpg" data-product-id="borneo-02">
+                  <img src="./assets/locations/borneo/02.jpg" alt="" loading="lazy" decoding="async">
+                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locBorneo">Borneo</small><strong>02</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="location-collection" id="singapur" data-location="singapur" aria-labelledby="singapur-title">
+            <div class="content-width">
+              <header class="location-collection-heading reveal">
+                <span class="location-index">07</span>
+                <div><p data-i18n="collectionLabel">LOKALITA</p><h2 id="singapur-title" data-i18n="locSingapore">Singapur</h2></div>
+                <span data-i18n="twoPhotos">2 fotografie</span>
+              </header>
+              <div class="location-photo-grid">
+                <button class="location-photo-card reveal" type="button" data-location-key="locSingapore" data-sequence="01" data-full="./assets/locations/singapur/01.jpg" data-product-id="singapur-01">
+                  <img src="./assets/locations/singapur/01.jpg" alt="" loading="lazy" decoding="async">
+                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locSingapore">Singapur</small><strong>01</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                </button>
+                <button class="location-photo-card reveal" type="button" data-location-key="locSingapore" data-sequence="02" data-full="./assets/locations/singapur/02.jpg" data-product-id="singapur-02">
+                  <img src="./assets/locations/singapur/02.jpg" alt="" loading="lazy" decoding="async">
+                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locSingapore">Singapur</small><strong>02</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="location-collection" id="costarika" data-location="costarika" aria-labelledby="costarika-title">
+            <div class="content-width">
+              <header class="location-collection-heading reveal">
+                <span class="location-index">08</span>
+                <div><p data-i18n="collectionLabel">LOKALITA</p><h2 id="costarika-title" data-i18n="locCostaRica">Kostarika</h2></div>
+                <span data-i18n="twoPhotos">2 fotografie</span>
+              </header>
+              <div class="location-photo-grid">
+                <button class="location-photo-card reveal" type="button" data-location-key="locCostaRica" data-sequence="01" data-full="./assets/locations/costarika/01.jpg" data-product-id="costarika-01">
+                  <img src="./assets/locations/costarika/01.jpg" alt="" loading="lazy" decoding="async">
+                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locCostaRica">Kostarika</small><strong>01</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                </button>
+                <button class="location-photo-card reveal" type="button" data-location-key="locCostaRica" data-sequence="02" data-full="./assets/locations/costarika/02.jpg" data-product-id="costarika-02">
+                  <img src="./assets/locations/costarika/02.jpg" alt="" loading="lazy" decoding="async">
+                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locCostaRica">Kostarika</small><strong>02</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="gallery-future" aria-labelledby="future-title">
+        <div class="content-width gallery-future-layout reveal">
+          <div>
+            <p class="section-kicker section-kicker-light" data-i18n="futureKicker">PŘIPRAVENO K RŮSTU</p>
+            <h2 id="future-title" data-i18n="futureTitle">Od galerie k detailu fotografie.</h2>
+          </div>
+          <div>
+            <p data-i18n="futureText">Každý snímek už má vlastní technický identifikátor. Později tak můžeme doplnit detail, ověřené údaje a případnou nabídku tisků bez přestavby celé galerie.</p>
+            <a class="button button-primary" href="./o-mne.html" data-i18n="navAbout">O mně</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="content-width footer-layout">
+        <div>
+          <strong>MILAN KUREŠ</strong>
+          <span data-i18n="brandSubtitle">BIRD &amp; NATURE PHOTOGRAPHER</span>
+        </div>
+        <p>© 2026 Milan Kureš</p>
+        <a href="#galerie-top"><span data-i18n="backToTop">Zpět nahoru</span><span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-title">
+      <button class="lightbox-close" type="button" data-lightbox-close data-i18n-aria-label="closePhoto" aria-label="Zavřít fotografii">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"></path></svg>
+      </button>
+      <button class="lightbox-arrow lightbox-previous" type="button" id="lightbox-previous" data-i18n-aria-label="previousPhoto" aria-label="Předchozí fotografie">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"></path></svg>
+      </button>
+      <figure>
+        <img id="lightbox-image" src="./assets/madeira/web/dsc-4094.webp" alt="">
+        <figcaption>
+          <span id="lightbox-category"></span>
+          <strong id="lightbox-title"></strong>
+        </figcaption>
+      </figure>
+      <button class="lightbox-arrow lightbox-next" type="button" id="lightbox-next" data-i18n-aria-label="nextPhoto" aria-label="Další fotografie">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg>
+      </button>
+    </dialog>
+
+    <noscript><p class="noscript">Pro přepínání jazyků, filtrování galerie a prohlížení fotografií je potřeba zapnout JavaScript.</p></noscript>
+    <script src="./gallery.js" defer></script>
+  </body>
+</html>
