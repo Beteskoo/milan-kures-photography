@@ -18,15 +18,15 @@
       heroKicker: "KOLEKCE PODLE LOKALITY",
       heroTitle: "Výpravy v obrazech",
       heroLead: "Osm míst. Jeden pohled na přírodu.",
-      heroCount: "8 lokalit · 16 fotografií",
       discoverCollections: "Procházet kolekce",
       collectionsKicker: "CESTY A DOMOV",
       collectionsTitle: "Galerie podle místa",
-      collectionsIntro: "Každá složka zůstává samostatnou kolekcí. Názvy druhů, data a přesná místa doplníme až z ověřených podkladů.",
+      collectionsIntro: "Kliknutím na snímek ho otevřete ve větším náhledu.",
       filterLabel: "Filtrovat podle lokality",
       filterAll: "Vše",
       collectionLabel: "LOKALITA",
-      twoPhotos: "2 fotografie",
+      locations: ["lokalita", "lokality", "lokalit"],
+      photos: ["fotografie", "fotografie", "fotografií"],
       locMadeira: "Madeira",
       locSpain: "Španělsko",
       locCzechia: "Domovina česká",
@@ -59,15 +59,15 @@
       heroKicker: "SAMMLUNGEN NACH ORT",
       heroTitle: "Reisen in Bildern",
       heroLead: "Acht Orte. Ein Blick auf die Natur.",
-      heroCount: "8 Orte · 16 Fotografien",
       discoverCollections: "Sammlungen entdecken",
       collectionsKicker: "REISEN UND HEIMAT",
       collectionsTitle: "Galerie nach Orten",
-      collectionsIntro: "Jeder Ordner bleibt eine eigene Sammlung. Artennamen, Daten und genaue Orte ergänzen wir erst anhand geprüfter Angaben.",
+      collectionsIntro: "Klicken Sie auf ein Foto, um es größer anzusehen.",
       filterLabel: "Nach Ort filtern",
       filterAll: "Alle",
       collectionLabel: "ORT",
-      twoPhotos: "2 Fotografien",
+      locations: ["Ort", "Orte", "Orte"],
+      photos: ["Foto", "Fotos", "Fotos"],
       locMadeira: "Madeira",
       locSpain: "Spanien",
       locCzechia: "Tschechische Heimat",
@@ -100,15 +100,15 @@
       heroKicker: "COLLECTIONS BY LOCATION",
       heroTitle: "Journeys in pictures",
       heroLead: "Eight places. One view of nature.",
-      heroCount: "8 locations · 16 photographs",
       discoverCollections: "Explore collections",
       collectionsKicker: "JOURNEYS AND HOME",
       collectionsTitle: "Gallery by location",
-      collectionsIntro: "Each folder remains a separate collection. Species names, dates and exact places will be added only from verified information.",
+      collectionsIntro: "Select a photograph to view it at a larger size.",
       filterLabel: "Filter by location",
       filterAll: "All",
       collectionLabel: "LOCATION",
-      twoPhotos: "2 photographs",
+      locations: ["location", "locations", "locations"],
+      photos: ["photograph", "photographs", "photographs"],
       locMadeira: "Madeira",
       locSpain: "Spain",
       locCzechia: "Czech homeland",
@@ -141,6 +141,7 @@
   var collections = Array.prototype.slice.call(document.querySelectorAll(".location-collection"));
   var photoCards = Array.prototype.slice.call(document.querySelectorAll(".location-photo-card"));
   var locationStatus = document.getElementById("location-status");
+  var heroCount = document.getElementById("location-hero-count");
   var lightbox = document.getElementById("lightbox");
   var lightboxImage = document.getElementById("lightbox-image");
   var lightboxCategory = document.getElementById("lightbox-category");
@@ -184,16 +185,24 @@
     });
   }
 
+  function countLabel(count, key) {
+    var form = count === 1 ? 0 : count >= 2 && count <= 4 ? 1 : 2;
+    return count + " " + translations[currentLanguage][key][form];
+  }
+
   function updateStatus() {
     var locationCount = collections.filter(function (collection) { return !collection.hidden; }).length;
-    var photoCount = visibleCards().length;
-    if (currentLanguage === "cs") {
-      locationStatus.textContent = locationCount + (locationCount === 1 ? " lokalita, " : " lokalit, ") + photoCount + (photoCount >= 2 && photoCount <= 4 ? " fotografie" : " fotografií");
-    } else if (currentLanguage === "de") {
-      locationStatus.textContent = locationCount + (locationCount === 1 ? " Ort, " : " Orte, ") + photoCount + (photoCount === 1 ? " Foto" : " Fotos");
-    } else {
-      locationStatus.textContent = locationCount + (locationCount === 1 ? " location, " : " locations, ") + photoCount + (photoCount === 1 ? " photograph" : " photographs");
-    }
+    locationStatus.textContent = countLabel(locationCount, "locations") + ", " + countLabel(visibleCards().length, "photos");
+  }
+
+  function updateCollectionCounts() {
+    heroCount.textContent = countLabel(collections.length, "locations") + " · " + countLabel(photoCards.length, "photos");
+    collections.forEach(function (collection) {
+      var label = collection.querySelector("[data-collection-count]");
+      if (label) {
+        label.textContent = countLabel(collection.querySelectorAll(".location-photo-card").length, "photos");
+      }
+    });
   }
 
   function isLightboxOpen() {
@@ -209,8 +218,12 @@
     var card = cards[currentLightboxIndex];
     lightboxImage.src = card.getAttribute("data-full");
     lightboxCategory.textContent = text(card.getAttribute("data-location-key"));
-    lightboxTitle.textContent = card.getAttribute("data-sequence");
-    lightboxImage.alt = lightboxCategory.textContent + ", " + lightboxTitle.textContent;
+    var captionId = card.getAttribute("aria-labelledby");
+    var caption = captionId ? document.getElementById(captionId) : null;
+    lightboxTitle.textContent = caption ? caption.textContent : card.getAttribute("data-sequence");
+    lightboxTitle.lang = caption ? caption.lang : currentLanguage;
+    lightboxImage.lang = lightboxTitle.lang;
+    lightboxImage.alt = caption ? caption.textContent : lightboxCategory.textContent + ", " + lightboxTitle.textContent;
   }
 
   function applyLanguage(language) {
@@ -236,6 +249,7 @@
       button.setAttribute("aria-pressed", String(active));
     });
     updateMenuLabel();
+    updateCollectionCounts();
     updateStatus();
     if (isLightboxOpen()) {
       updateLightbox();

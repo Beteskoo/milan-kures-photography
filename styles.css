@@ -2701,3 +2701,35 @@ body.language-entering [data-i18n]:not(.skip-link) {
     padding: 92px 0 104px;
   }
 }
+
+/* Larger location collections and captions below the image. */
+.location-photo-grid--catalog {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  row-gap: 1.75rem;
+}
+
+.location-photo-item {
+  min-width: 0;
+  margin: 0;
+}
+
+.location-photo-item > .location-photo-card {
+  display: block;
+  width: 100%;
+  min-height: 0;
+  aspect-ratio: 4 / 3;
+}
+
+.location-photo-item > .location-photo-card .photo-open {
+  top: 0.85rem;
+  right: 0.85rem;
+}
+
+.location-photo-caption {
+  margin-block-start: 0.65rem;
+  color: var(--forest-deep);
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}

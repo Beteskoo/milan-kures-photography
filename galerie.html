@@ -72,7 +72,7 @@
           <p class="section-kicker section-kicker-light" data-i18n="heroKicker">KOLEKCE PODLE LOKALITY</p>
           <h1 id="location-hero-title" data-i18n="heroTitle">Výpravy v obrazech</h1>
           <p class="location-hero-lead" data-i18n="heroLead">Osm míst. Jeden pohled na přírodu.</p>
-          <p class="location-hero-count" data-i18n="heroCount">8 lokalit · 16 fotografií</p>
+          <p class="location-hero-count" id="location-hero-count">8 lokalit · 118 fotografií</p>
         </div>
         <a class="scroll-cue" href="#kolekce">
           <span data-i18n="discoverCollections">Procházet kolekce</span>
@@ -86,7 +86,7 @@
             <p class="section-kicker" data-i18n="collectionsKicker">CESTY A DOMOV</p>
             <h2 id="collections-title" data-i18n="collectionsTitle">Galerie podle místa</h2>
           </div>
-          <p data-i18n="collectionsIntro">Každá složka zůstává samostatnou kolekcí. Názvy druhů, data a přesná místa doplníme až z ověřených podkladů.</p>
+          <p data-i18n="collectionsIntro">Kliknutím na snímek ho otevřete ve větším náhledu.</p>
         </div>
 
         <div class="location-toolbar-shell">
@@ -102,7 +102,7 @@
               <button class="location-filter" type="button" data-location-filter="singapur" aria-pressed="false" data-i18n="locSingapore">Singapur</button>
               <button class="location-filter" type="button" data-location-filter="costarika" aria-pressed="false" data-i18n="locCostaRica">Kostarika</button>
             </div>
-            <span class="location-status" id="location-status" aria-live="polite">8 lokalit, 16 fotografií</span>
+            <span class="location-status" id="location-status" aria-live="polite">8 lokalit, 118 fotografií</span>
           </div>
         </div>
 
@@ -112,7 +112,7 @@
               <header class="location-collection-heading reveal">
                 <span class="location-index">01</span>
                 <div><p data-i18n="collectionLabel">LOKALITA</p><h2 id="madeira-title" data-i18n="locMadeira">Madeira</h2></div>
-                <span data-i18n="twoPhotos">2 fotografie</span>
+                <span data-collection-count="2">2 fotografie</span>
               </header>
               <div class="location-photo-grid">
                 <button class="location-photo-card reveal" type="button" data-location-key="locMadeira" data-sequence="01" data-full="./assets/madeira/web/dsc-4094.webp" data-product-id="madeira-01">
@@ -132,7 +132,7 @@
               <header class="location-collection-heading reveal">
                 <span class="location-index">02</span>
                 <div><p data-i18n="collectionLabel">LOKALITA</p><h2 id="spanelsko-title" data-i18n="locSpain">Španělsko</h2></div>
-                <span data-i18n="twoPhotos">2 fotografie</span>
+                <span data-collection-count="2">2 fotografie</span>
               </header>
               <div class="location-photo-grid">
                 <button class="location-photo-card reveal" type="button" data-location-key="locSpain" data-sequence="01" data-full="./assets/locations/spanelsko/01.jpg" data-product-id="spanelsko-01">
@@ -152,7 +152,7 @@
               <header class="location-collection-heading reveal">
                 <span class="location-index">03</span>
                 <div><p data-i18n="collectionLabel">LOKALITA</p><h2 id="domovina-title" data-i18n="locCzechia">Domovina česká</h2></div>
-                <span data-i18n="twoPhotos">2 fotografie</span>
+                <span data-collection-count="2">2 fotografie</span>
               </header>
               <div class="location-photo-grid">
                 <button class="location-photo-card reveal" type="button" data-location-key="locCzechia" data-sequence="01" data-full="./assets/locations/domovina-ceska/01.jpg" data-product-id="domovina-ceska-01">
@@ -172,7 +172,7 @@
               <header class="location-collection-heading reveal">
                 <span class="location-index">04</span>
                 <div><p data-i18n="collectionLabel">LOKALITA</p><h2 id="norsko-title" data-i18n="locNorway">Norsko</h2></div>
-                <span data-i18n="twoPhotos">2 fotografie</span>
+                <span data-collection-count="2">2 fotografie</span>
               </header>
               <div class="location-photo-grid">
                 <button class="location-photo-card reveal" type="button" data-location-key="locNorway" data-sequence="01" data-full="./assets/locations/norsko/01.jpg" data-product-id="norsko-01">
@@ -192,17 +192,373 @@
               <header class="location-collection-heading reveal">
                 <span class="location-index">05</span>
                 <div><p data-i18n="collectionLabel">LOKALITA</p><h2 id="uganda-title" data-i18n="locUganda">Uganda</h2></div>
-                <span data-i18n="twoPhotos">2 fotografie</span>
+                <span data-collection-count="52">52 fotografií</span>
               </header>
-              <div class="location-photo-grid">
-                <button class="location-photo-card reveal" type="button" data-location-key="locUganda" data-sequence="01" data-full="./assets/locations/uganda/01.jpg" data-product-id="uganda-01">
-                  <img src="./assets/locations/uganda/01.jpg" alt="" loading="lazy" decoding="async">
-                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locUganda">Uganda</small><strong>01</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
-                </button>
-                <button class="location-photo-card reveal" type="button" data-location-key="locUganda" data-sequence="02" data-full="./assets/locations/uganda/02.jpg" data-product-id="uganda-02">
-                  <img src="./assets/locations/uganda/02.jpg" alt="" loading="lazy" decoding="async">
-                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locUganda">Uganda</small><strong>02</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
-                </button>
+              <div class="location-photo-grid location-photo-grid--catalog">
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="01" data-full="./assets/locations/uganda/originals/dsc-7637.webp" data-product-id="uganda-dsc-7637" aria-labelledby="caption-uganda-dsc-7637">
+                    <img src="./assets/locations/uganda/originals/dsc-7637.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-7637" lang="cs">Gorila horská</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="02" data-full="./assets/locations/uganda/originals/dsc-5120.webp" data-product-id="uganda-dsc-5120" aria-labelledby="caption-uganda-dsc-5120">
+                    <img src="./assets/locations/uganda/originals/dsc-5120.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5120" lang="cs">Husička vdovka</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="03" data-full="./assets/locations/uganda/originals/dsc-8604.webp" data-product-id="uganda-dsc-8604" aria-labelledby="caption-uganda-dsc-8604">
+                    <img src="./assets/locations/uganda/originals/dsc-8604.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-8604" lang="cs">Ibis posvátný</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="04" data-full="./assets/locations/uganda/originals/dsc-5334.webp" data-product-id="uganda-dsc-5334" aria-labelledby="caption-uganda-dsc-5334">
+                    <img src="./assets/locations/uganda/originals/dsc-5334.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5334" lang="cs">Guaréza pláštíková</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="05" data-full="./assets/locations/uganda/originals/dsc-5031.webp" data-product-id="uganda-dsc-5031" aria-labelledby="caption-uganda-dsc-5031">
+                    <img src="./assets/locations/uganda/originals/dsc-5031.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5031" lang="cs">Člunozobec africký</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="06" data-full="./assets/locations/uganda/originals/dsc-8660.webp" data-product-id="uganda-dsc-8660" aria-labelledby="caption-uganda-dsc-8660">
+                    <img src="./assets/locations/uganda/originals/dsc-8660.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-8660" lang="cs">Jeřáb královský</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="07" data-full="./assets/locations/uganda/originals/dsc-5618.webp" data-product-id="uganda-dsc-5618" aria-labelledby="caption-uganda-dsc-5618">
+                    <img src="./assets/locations/uganda/originals/dsc-5618.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5618" lang="cs">Šimpanz učenlivý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="08" data-full="./assets/locations/uganda/originals/dsc-8580.webp" data-product-id="uganda-dsc-8580" aria-labelledby="caption-uganda-dsc-8580">
+                    <img src="./assets/locations/uganda/originals/dsc-8580.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-8580" lang="cs">Voduška velká</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="09" data-full="./assets/locations/uganda/originals/dsc-7877.webp" data-product-id="uganda-dsc-7877" aria-labelledby="caption-uganda-dsc-7877">
+                    <img src="./assets/locations/uganda/originals/dsc-7877.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-7877" lang="cs">Gorila horská</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="10" data-full="./assets/locations/uganda/originals/dsc-6075.webp" data-product-id="uganda-dsc-6075" aria-labelledby="caption-uganda-dsc-6075">
+                    <img src="./assets/locations/uganda/originals/dsc-6075.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-6075" lang="cs">Lev savanový</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="11" data-full="./assets/locations/uganda/originals/dsc-5385.webp" data-product-id="uganda-dsc-5385" aria-labelledby="caption-uganda-dsc-5385">
+                    <img src="./assets/locations/uganda/originals/dsc-5385.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5385" lang="cs">Ugandský kob</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="12" data-full="./assets/locations/uganda/originals/dsc-5927.webp" data-product-id="uganda-dsc-5927" aria-labelledby="caption-uganda-dsc-5927">
+                    <img src="./assets/locations/uganda/originals/dsc-5927.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5927" lang="cs">Mangusta žíhaná</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="13" data-full="./assets/locations/uganda/originals/dsc-8388.webp" data-product-id="uganda-dsc-8388" aria-labelledby="caption-uganda-dsc-8388">
+                    <img src="./assets/locations/uganda/originals/dsc-8388.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-8388" lang="cs">Impala jižní</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="14" data-full="./assets/locations/uganda/originals/dsc-8597.webp" data-product-id="uganda-dsc-8597" aria-labelledby="caption-uganda-dsc-8597">
+                    <img src="./assets/locations/uganda/originals/dsc-8597.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-8597" lang="cs">Zebra stepní</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="15" data-full="./assets/locations/uganda/originals/dsc-5139.webp" data-product-id="uganda-dsc-5139" aria-labelledby="caption-uganda-dsc-5139">
+                    <img src="./assets/locations/uganda/originals/dsc-5139.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5139" lang="cs">Čejka bělohlavá</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="16" data-full="./assets/locations/uganda/originals/dsc-5446.webp" data-product-id="uganda-dsc-5446" aria-labelledby="caption-uganda-dsc-5446">
+                    <img src="./assets/locations/uganda/originals/dsc-5446.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5446" lang="cs">Zoborožec šedolící</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="17" data-full="./assets/locations/uganda/originals/dsc-7776.webp" data-product-id="uganda-dsc-7776" aria-labelledby="caption-uganda-dsc-7776">
+                    <img src="./assets/locations/uganda/originals/dsc-7776.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-7776" lang="cs">Gorila horská</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="18" data-full="./assets/locations/uganda/originals/dsc-8404.webp" data-product-id="uganda-dsc-8404" aria-labelledby="caption-uganda-dsc-8404">
+                    <img src="./assets/locations/uganda/originals/dsc-8404.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-8404" lang="cs">Žirafa rothschildova</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="19" data-full="./assets/locations/uganda/originals/dsc-7923.webp" data-product-id="uganda-dsc-7923" aria-labelledby="caption-uganda-dsc-7923">
+                    <img src="./assets/locations/uganda/originals/dsc-7923.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-7923" lang="cs">Bulbul zahradní</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="20" data-full="./assets/locations/uganda/originals/dsc-8361.webp" data-product-id="uganda-dsc-8361" aria-labelledby="caption-uganda-dsc-8361">
+                    <img src="./assets/locations/uganda/originals/dsc-8361.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-8361" lang="cs">Buvol africký</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="21" data-full="./assets/locations/uganda/originals/dsc-7040.webp" data-product-id="uganda-dsc-7040" aria-labelledby="caption-uganda-dsc-7040">
+                    <img src="./assets/locations/uganda/originals/dsc-7040.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-7040" lang="cs">Orel bojovný</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="22" data-full="./assets/locations/uganda/originals/dsc-5915.webp" data-product-id="uganda-dsc-5915" aria-labelledby="caption-uganda-dsc-5915">
+                    <img src="./assets/locations/uganda/originals/dsc-5915.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5915" lang="cs">Frankolín rudohrdlý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="23" data-full="./assets/locations/uganda/originals/dsc-5818.webp" data-product-id="uganda-dsc-5818" aria-labelledby="caption-uganda-dsc-5818">
+                    <img src="./assets/locations/uganda/originals/dsc-5818.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5818" lang="cs">Prase savanové</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="24" data-full="./assets/locations/uganda/originals/dsc-7910.webp" data-product-id="uganda-dsc-7910" aria-labelledby="caption-uganda-dsc-7910">
+                    <img src="./assets/locations/uganda/originals/dsc-7910.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-7910" lang="cs">Timálie africká</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="25" data-full="./assets/locations/uganda/originals/dsc-6354.webp" data-product-id="uganda-dsc-6354" aria-labelledby="caption-uganda-dsc-6354">
+                    <img src="./assets/locations/uganda/originals/dsc-6354.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-6354" lang="cs">Rybařík jižní</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="26" data-full="./assets/locations/uganda/originals/dsc-5872.webp" data-product-id="uganda-dsc-5872" aria-labelledby="caption-uganda-dsc-5872">
+                    <img src="./assets/locations/uganda/originals/dsc-5872.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5872" lang="cs">Pavián olivový</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="27" data-full="./assets/locations/uganda/originals/dsc-5960.webp" data-product-id="uganda-dsc-5960" aria-labelledby="caption-uganda-dsc-5960">
+                    <img src="./assets/locations/uganda/originals/dsc-5960.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5960" lang="cs">Ťuhýkovec karmínovobřichý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="28" data-full="./assets/locations/uganda/originals/dsc-5336.webp" data-product-id="uganda-dsc-5336" aria-labelledby="caption-uganda-dsc-5336">
+                    <img src="./assets/locations/uganda/originals/dsc-5336.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5336" lang="cs">Kočkodan červenozelený</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="29" data-full="./assets/locations/uganda/originals/dsc-5008.webp" data-product-id="uganda-dsc-5008" aria-labelledby="caption-uganda-dsc-5008">
+                    <img src="./assets/locations/uganda/originals/dsc-5008.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5008" lang="cs">Slípka modrá</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="30" data-full="./assets/locations/uganda/originals/dsc-6391.webp" data-product-id="uganda-dsc-6391" aria-labelledby="caption-uganda-dsc-6391">
+                    <img src="./assets/locations/uganda/originals/dsc-6391.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-6391" lang="cs">Buvol africký</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="31" data-full="./assets/locations/uganda/originals/dsc-7258.webp" data-product-id="uganda-dsc-7258" aria-labelledby="caption-uganda-dsc-7258">
+                    <img src="./assets/locations/uganda/originals/dsc-7258.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-7258" lang="cs">Martináč pajasanový</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="32" data-full="./assets/locations/uganda/originals/dsc-5204.webp" data-product-id="uganda-dsc-5204" aria-labelledby="caption-uganda-dsc-5204">
+                    <img src="./assets/locations/uganda/originals/dsc-5204.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5204" lang="cs">Ostnák africký</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="33" data-full="./assets/locations/uganda/originals/dsc-6974.webp" data-product-id="uganda-dsc-6974" aria-labelledby="caption-uganda-dsc-6974">
+                    <img src="./assets/locations/uganda/originals/dsc-6974.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-6974" lang="cs">Linduškovec žlutohrdlý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="34" data-full="./assets/locations/uganda/originals/dsc-6927.webp" data-product-id="uganda-dsc-6927" aria-labelledby="caption-uganda-dsc-6927">
+                    <img src="./assets/locations/uganda/originals/dsc-6927.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-6927" lang="cs">Jestřábek pestrý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="35" data-full="./assets/locations/uganda/originals/dsc-7261.webp" data-product-id="uganda-dsc-7261" aria-labelledby="caption-uganda-dsc-7261">
+                    <img src="./assets/locations/uganda/originals/dsc-7261.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-7261" lang="cs">Strdimil obojkový</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="36" data-full="./assets/locations/uganda/originals/dsc-7305.webp" data-product-id="uganda-dsc-7305" aria-labelledby="caption-uganda-dsc-7305">
+                    <img src="./assets/locations/uganda/originals/dsc-7305.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-7305" lang="cs">Chameleon Johnstonův</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="37" data-full="./assets/locations/uganda/originals/dsc-6881.webp" data-product-id="uganda-dsc-6881" aria-labelledby="caption-uganda-dsc-6881">
+                    <img src="./assets/locations/uganda/originals/dsc-6881.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-6881" lang="cs">Kočkodan Rolowayův</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="38" data-full="./assets/locations/uganda/originals/dsc-6195.webp" data-product-id="uganda-dsc-6195" aria-labelledby="caption-uganda-dsc-6195">
+                    <img src="./assets/locations/uganda/originals/dsc-6195.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-6195" lang="cs">Ťuhýk šedohřbetý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="39" data-full="./assets/locations/uganda/originals/dsc-7109.webp" data-product-id="uganda-dsc-7109" aria-labelledby="caption-uganda-dsc-7109">
+                    <img src="./assets/locations/uganda/originals/dsc-7109.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-7109" lang="cs">Ledňáček šedohlavý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="40" data-full="./assets/locations/uganda/originals/dsc-8304.webp" data-product-id="uganda-dsc-8304" aria-labelledby="caption-uganda-dsc-8304">
+                    <img src="./assets/locations/uganda/originals/dsc-8304.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-8304" lang="cs">Snovač zahradní</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="41" data-full="./assets/locations/uganda/originals/dsc-6417.webp" data-product-id="uganda-dsc-6417" aria-labelledby="caption-uganda-dsc-6417">
+                    <img src="./assets/locations/uganda/originals/dsc-6417.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-6417" lang="cs">Kladivouš africký</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="42" data-full="./assets/locations/uganda/originals/dsc-6309.webp" data-product-id="uganda-dsc-6309" aria-labelledby="caption-uganda-dsc-6309">
+                    <img src="./assets/locations/uganda/originals/dsc-6309.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-6309" lang="cs">Čejka trnitá</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="43" data-full="./assets/locations/uganda/originals/dsc-7061.webp" data-product-id="uganda-dsc-7061" aria-labelledby="caption-uganda-dsc-7061">
+                    <img src="./assets/locations/uganda/originals/dsc-7061.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-7061" lang="cs">Hroch obojživelný</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="44" data-full="./assets/locations/uganda/originals/dsc-6869.webp" data-product-id="uganda-dsc-6869" aria-labelledby="caption-uganda-dsc-6869">
+                    <img src="./assets/locations/uganda/originals/dsc-6869.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-6869" lang="cs">Orel jasnohlavý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="45" data-full="./assets/locations/uganda/originals/dsc-7943.webp" data-product-id="uganda-dsc-7943" aria-labelledby="caption-uganda-dsc-7943">
+                    <img src="./assets/locations/uganda/originals/dsc-7943.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-7943" lang="cs">Cistovník šedohnědý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="46" data-full="./assets/locations/uganda/originals/dsc-7914.webp" data-product-id="uganda-dsc-7914" aria-labelledby="caption-uganda-dsc-7914">
+                    <img src="./assets/locations/uganda/originals/dsc-7914.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-7914" lang="cs">Kruhoočko žlutozelené</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="47" data-full="./assets/locations/uganda/originals/dsc-5668.webp" data-product-id="uganda-dsc-5668" aria-labelledby="caption-uganda-dsc-5668">
+                    <img src="./assets/locations/uganda/originals/dsc-5668.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5668" lang="cs">Marabu africký</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="48" data-full="./assets/locations/uganda/originals/dsc-6136.webp" data-product-id="uganda-dsc-6136" aria-labelledby="caption-uganda-dsc-6136">
+                    <img src="./assets/locations/uganda/originals/dsc-6136.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-6136" lang="cs">Leskoptev savanová</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="49" data-full="./assets/locations/uganda/originals/dsc-7932.webp" data-product-id="uganda-dsc-7932" aria-labelledby="caption-uganda-dsc-7932">
+                    <img src="./assets/locations/uganda/originals/dsc-7932.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-7932" lang="cs">Strdimil horský</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="50" data-full="./assets/locations/uganda/originals/dsc-5697.webp" data-product-id="uganda-dsc-5697" aria-labelledby="caption-uganda-dsc-5697">
+                    <img src="./assets/locations/uganda/originals/dsc-5697.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-5697" lang="cs">Luňák africký</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="51" data-full="./assets/locations/uganda/originals/dsc-7022.webp" data-product-id="uganda-dsc-7022" aria-labelledby="caption-uganda-dsc-7022">
+                    <img src="./assets/locations/uganda/originals/dsc-7022.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-7022" lang="cs">Orel chocholatý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locUganda" data-sequence="52" data-full="./assets/locations/uganda/originals/dsc-8548.webp" data-product-id="uganda-dsc-8548" aria-labelledby="caption-uganda-dsc-8548">
+                    <img src="./assets/locations/uganda/originals/dsc-8548.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-uganda-dsc-8548" lang="cs">Mandelík skořicový</figcaption>
+                </figure>
               </div>
             </div>
           </section>
@@ -212,17 +568,380 @@
               <header class="location-collection-heading reveal">
                 <span class="location-index">06</span>
                 <div><p data-i18n="collectionLabel">LOKALITA</p><h2 id="borneo-title" data-i18n="locBorneo">Borneo</h2></div>
-                <span data-i18n="twoPhotos">2 fotografie</span>
+                <span data-collection-count="53">53 fotografií</span>
               </header>
-              <div class="location-photo-grid">
-                <button class="location-photo-card reveal" type="button" data-location-key="locBorneo" data-sequence="01" data-full="./assets/locations/borneo/01.jpg" data-product-id="borneo-01">
-                  <img src="./assets/locations/borneo/01.jpg" alt="" loading="lazy" decoding="async">
-                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locBorneo">Borneo</small><strong>01</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
-                </button>
-                <button class="location-photo-card reveal" type="button" data-location-key="locBorneo" data-sequence="02" data-full="./assets/locations/borneo/02.jpg" data-product-id="borneo-02">
-                  <img src="./assets/locations/borneo/02.jpg" alt="" loading="lazy" decoding="async">
-                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locBorneo">Borneo</small><strong>02</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
-                </button>
+              <div class="location-photo-grid location-photo-grid--catalog">
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="01" data-full="./assets/locations/borneo/originals/dsc-6537.webp" data-product-id="borneo-01" aria-labelledby="caption-borneo-01">
+                    <img src="./assets/locations/borneo/originals/dsc-6537.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-01" lang="cs">Hulman stříbrný</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="02" data-full="./assets/locations/borneo/originals/dsc-6159.webp" data-product-id="borneo-02" aria-labelledby="caption-borneo-02">
+                    <img src="./assets/locations/borneo/originals/dsc-6159.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-02" lang="cs">Varan skvrnitý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="03" data-full="./assets/locations/borneo/originals/dsc-6282.webp" data-product-id="borneo-dsc-6282" aria-labelledby="caption-borneo-dsc-6282">
+                    <img src="./assets/locations/borneo/originals/dsc-6282.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6282" lang="cs">Makak jávský</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="04" data-full="./assets/locations/borneo/originals/dsc-6013.webp" data-product-id="borneo-dsc-6013" aria-labelledby="caption-borneo-dsc-6013">
+                    <img src="./assets/locations/borneo/originals/dsc-6013.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6013" lang="cs">Ledňáček modrý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="05" data-full="./assets/locations/borneo/originals/dsc-7411.webp" data-product-id="borneo-dsc-7411" aria-labelledby="caption-borneo-dsc-7411">
+                    <img src="./assets/locations/borneo/originals/dsc-7411.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7411" lang="cs">Makak vepří</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="06" data-full="./assets/locations/borneo/originals/dsc-7621.webp" data-product-id="borneo-dsc-7621" aria-labelledby="caption-borneo-dsc-7621">
+                    <img src="./assets/locations/borneo/originals/dsc-7621.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7621" lang="cs">Nártoun</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="07" data-full="./assets/locations/borneo/originals/dsc-6812.webp" data-product-id="borneo-dsc-6812" aria-labelledby="caption-borneo-dsc-6812">
+                    <img src="./assets/locations/borneo/originals/dsc-6812.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6812" lang="cs">Dvojzobrožec nosorožčí</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="08" data-full="./assets/locations/borneo/originals/dsc-7284.webp" data-product-id="borneo-dsc-7284" aria-labelledby="caption-borneo-dsc-7284">
+                    <img src="./assets/locations/borneo/originals/dsc-7284.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7284" lang="cs">Loboš černožlutý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="09" data-full="./assets/locations/borneo/originals/dsc-5986.webp" data-product-id="borneo-dsc-5986" aria-labelledby="caption-borneo-dsc-5986">
+                    <img src="./assets/locations/borneo/originals/dsc-5986.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-5986" lang="cs">Ledňáček azurový</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="10" data-full="./assets/locations/borneo/originals/dsc-5870.webp" data-product-id="borneo-dsc-5870" aria-labelledby="caption-borneo-dsc-5870">
+                    <img src="./assets/locations/borneo/originals/dsc-5870.webp" alt="" width="1120" height="1680" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-5870" lang="cs">Slon bornejský</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="11" data-full="./assets/locations/borneo/originals/dsc-6310.webp" data-product-id="borneo-dsc-6310" aria-labelledby="caption-borneo-dsc-6310">
+                    <img src="./assets/locations/borneo/originals/dsc-6310.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6310" lang="cs">Orangutan bornejský</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="12" data-full="./assets/locations/borneo/originals/dsc-7289.webp" data-product-id="borneo-dsc-7289" aria-labelledby="caption-borneo-dsc-7289">
+                    <img src="./assets/locations/borneo/originals/dsc-7289.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7289" lang="cs">Loboš žlutočerný</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="13" data-full="./assets/locations/borneo/originals/dsc-7392.webp" data-product-id="borneo-dsc-7392" aria-labelledby="caption-borneo-dsc-7392">
+                    <img src="./assets/locations/borneo/originals/dsc-7392.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7392" lang="cs">Makak vepří</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="14" data-full="./assets/locations/borneo/originals/dsc-5932.webp" data-product-id="borneo-dsc-5932" aria-labelledby="caption-borneo-dsc-5932">
+                    <img src="./assets/locations/borneo/originals/dsc-5932.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-5932" lang="cs">Kvakoš noční</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="15" data-full="./assets/locations/borneo/originals/dsc-7601.webp" data-product-id="borneo-dsc-7601" aria-labelledby="caption-borneo-dsc-7601">
+                    <img src="./assets/locations/borneo/originals/dsc-7601.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7601" lang="cs">Létající veverka</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="16" data-full="./assets/locations/borneo/originals/dsc-7028.webp" data-product-id="borneo-dsc-7028" aria-labelledby="caption-borneo-dsc-7028">
+                    <img src="./assets/locations/borneo/originals/dsc-7028.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7028" lang="cs">Oviječ skvrnitý (cibetka)</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="17" data-full="./assets/locations/borneo/originals/dsc-6399.webp" data-product-id="borneo-dsc-6399" aria-labelledby="caption-borneo-dsc-6399">
+                    <img src="./assets/locations/borneo/originals/dsc-6399.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6399" lang="cs">Bojga psí</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="18" data-full="./assets/locations/borneo/originals/dsc-6756.webp" data-product-id="borneo-dsc-6756" aria-labelledby="caption-borneo-dsc-6756">
+                    <img src="./assets/locations/borneo/originals/dsc-6756.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6756" lang="cs">Anhinga indomalajská</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="19" data-full="./assets/locations/borneo/originals/dsc-7264.webp" data-product-id="borneo-dsc-7264" aria-labelledby="caption-borneo-dsc-7264">
+                    <img src="./assets/locations/borneo/originals/dsc-7264.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7264" lang="cs">Loboš žlutočerný</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="20" data-full="./assets/locations/borneo/originals/dsc-7257.webp" data-product-id="borneo-dsc-7257" aria-labelledby="caption-borneo-dsc-7257">
+                    <img src="./assets/locations/borneo/originals/dsc-7257.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7257" lang="cs">Krejčiřík šedý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="21" data-full="./assets/locations/borneo/originals/dsc-8067.webp" data-product-id="borneo-dsc-8067" aria-labelledby="caption-borneo-dsc-8067">
+                    <img src="./assets/locations/borneo/originals/dsc-8067.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-8067" lang="cs">Holub zelený</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="22" data-full="./assets/locations/borneo/originals/dsc-5959.webp" data-product-id="borneo-dsc-5959" aria-labelledby="caption-borneo-dsc-5959">
+                    <img src="./assets/locations/borneo/originals/dsc-5959.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-5959" lang="cs">Kvakoš noční</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="23" data-full="./assets/locations/borneo/originals/dsc-6679.webp" data-product-id="borneo-dsc-6679" aria-labelledby="caption-borneo-dsc-6679">
+                    <img src="./assets/locations/borneo/originals/dsc-6679.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6679" lang="cs">Volavka stříbřitá</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="24" data-full="./assets/locations/borneo/originals/dsc-6890.webp" data-product-id="borneo-dsc-6890" aria-labelledby="caption-borneo-dsc-6890">
+                    <img src="./assets/locations/borneo/originals/dsc-6890.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6890" lang="cs">Loboš červeno-černý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="25" data-full="./assets/locations/borneo/originals/dsc-5903.webp" data-product-id="borneo-dsc-5903" aria-labelledby="caption-borneo-dsc-5903">
+                    <img src="./assets/locations/borneo/originals/dsc-5903.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-5903" lang="cs">Makak jávský</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="26" data-full="./assets/locations/borneo/originals/dsc-6277.webp" data-product-id="borneo-dsc-6277" aria-labelledby="caption-borneo-dsc-6277">
+                    <img src="./assets/locations/borneo/originals/dsc-6277.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6277" lang="cs">Krokodýl mořský</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="27" data-full="./assets/locations/borneo/originals/dsc-7053.webp" data-product-id="borneo-dsc-7053" aria-labelledby="caption-borneo-dsc-7053">
+                    <img src="./assets/locations/borneo/originals/dsc-7053.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7053" lang="cs">Orlík chocholatý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="28" data-full="./assets/locations/borneo/originals/dsc-7600.webp" data-product-id="borneo-dsc-7600" aria-labelledby="caption-borneo-dsc-7600">
+                    <img src="./assets/locations/borneo/originals/dsc-7600.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7600" lang="cs">Sovka čokoládová</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="29" data-full="./assets/locations/borneo/originals/dsc-6488.webp" data-product-id="borneo-dsc-6488" aria-labelledby="caption-borneo-dsc-6488">
+                    <img src="./assets/locations/borneo/originals/dsc-6488.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6488" lang="cs">Ketupa malajská</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="30" data-full="./assets/locations/borneo/originals/dsc-7400.webp" data-product-id="borneo-dsc-7400" aria-labelledby="caption-borneo-dsc-7400">
+                    <img src="./assets/locations/borneo/originals/dsc-7400.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7400" lang="cs">Orangutan bornejský</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="31" data-full="./assets/locations/borneo/originals/dsc-7565.webp" data-product-id="borneo-dsc-7565" aria-labelledby="caption-borneo-dsc-7565">
+                    <img src="./assets/locations/borneo/originals/dsc-7565.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7565" lang="cs">Kahau nosatý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="32" data-full="./assets/locations/borneo/originals/dsc-6625.webp" data-product-id="borneo-dsc-6625" aria-labelledby="caption-borneo-dsc-6625">
+                    <img src="./assets/locations/borneo/originals/dsc-6625.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6625" lang="cs">Ledňáček velkozobý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="33" data-full="./assets/locations/borneo/originals/dsc-7713.webp" data-product-id="borneo-dsc-7713" aria-labelledby="caption-borneo-dsc-7713">
+                    <img src="./assets/locations/borneo/originals/dsc-7713.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7713" lang="cs">Zmije zelená-jamková</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="34" data-full="./assets/locations/borneo/originals/dsc-7703.webp" data-product-id="borneo-dsc-7703" aria-labelledby="caption-borneo-dsc-7703">
+                    <img src="./assets/locations/borneo/originals/dsc-7703.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7703" lang="cs">Chřestýšovec Waglerův</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="35" data-full="./assets/locations/borneo/originals/dsc-6840.webp" data-product-id="borneo-dsc-6840" aria-labelledby="caption-borneo-dsc-6840">
+                    <img src="./assets/locations/borneo/originals/dsc-6840.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6840" lang="cs">Veverka obrovská lesní</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="36" data-full="./assets/locations/borneo/originals/dsc-6515.webp" data-product-id="borneo-dsc-6515" aria-labelledby="caption-borneo-dsc-6515">
+                    <img src="./assets/locations/borneo/originals/dsc-6515.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6515" lang="cs">Hulman jávský</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="37" data-full="./assets/locations/borneo/originals/dsc-7397.webp" data-product-id="borneo-dsc-7397" aria-labelledby="caption-borneo-dsc-7397">
+                    <img src="./assets/locations/borneo/originals/dsc-7397.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7397" lang="cs">Makak vepří</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="38" data-full="./assets/locations/borneo/originals/dsc-5804.webp" data-product-id="borneo-dsc-5804" aria-labelledby="caption-borneo-dsc-5804">
+                    <img src="./assets/locations/borneo/originals/dsc-5804.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-5804" lang="cs">Volavka bílá</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="39" data-full="./assets/locations/borneo/originals/dsc-7681.webp" data-product-id="borneo-dsc-7681" aria-labelledby="caption-borneo-dsc-7681">
+                    <img src="./assets/locations/borneo/originals/dsc-7681.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7681" lang="cs">Ledňáček džunglový</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="40" data-full="./assets/locations/borneo/originals/dsc-6353.webp" data-product-id="borneo-dsc-6353" aria-labelledby="caption-borneo-dsc-6353">
+                    <img src="./assets/locations/borneo/originals/dsc-6353.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6353" lang="cs">Orel rybožravý</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="41" data-full="./assets/locations/borneo/originals/dsc-6459.webp" data-product-id="borneo-dsc-6459" aria-labelledby="caption-borneo-dsc-6459">
+                    <img src="./assets/locations/borneo/originals/dsc-6459.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6459" lang="cs">Makak jávský</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="42" data-full="./assets/locations/borneo/originals/dsc-6706.webp" data-product-id="borneo-dsc-6706" aria-labelledby="caption-borneo-dsc-6706">
+                    <img src="./assets/locations/borneo/originals/dsc-6706.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6706" lang="cs">Zoborožec bělolící</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="43" data-full="./assets/locations/borneo/originals/dsc-6765.webp" data-product-id="borneo-dsc-6765" aria-labelledby="caption-borneo-dsc-6765">
+                    <img src="./assets/locations/borneo/originals/dsc-6765.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6765" lang="cs">Parthenos Silvia</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="44" data-full="./assets/locations/borneo/originals/dsc-7205.webp" data-product-id="borneo-dsc-7205" aria-labelledby="caption-borneo-dsc-7205">
+                    <img src="./assets/locations/borneo/originals/dsc-7205.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7205" lang="cs">Vousák modrolící</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="45" data-full="./assets/locations/borneo/originals/dsc-7671.webp" data-product-id="borneo-dsc-7671" aria-labelledby="caption-borneo-dsc-7671">
+                    <img src="./assets/locations/borneo/originals/dsc-7671.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7671" lang="cs">Ledňáček rezavolímcový</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="46" data-full="./assets/locations/borneo/originals/dsc-6191.webp" data-product-id="borneo-dsc-6191" aria-labelledby="caption-borneo-dsc-6191">
+                    <img src="./assets/locations/borneo/originals/dsc-6191.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6191" lang="cs">Volavka stříbřitá</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="47" data-full="./assets/locations/borneo/originals/dsc-7998.webp" data-product-id="borneo-dsc-7998" aria-labelledby="caption-borneo-dsc-7998">
+                    <img src="./assets/locations/borneo/originals/dsc-7998.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7998" lang="cs">Majna hnědá</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="48" data-full="./assets/locations/borneo/originals/dsc-7540.webp" data-product-id="borneo-dsc-7540" aria-labelledby="caption-borneo-dsc-7540">
+                    <img src="./assets/locations/borneo/originals/dsc-7540.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7540" lang="cs">Veverka štíhlá</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="49" data-full="./assets/locations/borneo/originals/dsc-8153.webp" data-product-id="borneo-dsc-8153" aria-labelledby="caption-borneo-dsc-8153">
+                    <img src="./assets/locations/borneo/originals/dsc-8153.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-8153" lang="cs">Vlha zelená</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="50" data-full="./assets/locations/borneo/originals/dsc-7429.webp" data-product-id="borneo-dsc-7429" aria-labelledby="caption-borneo-dsc-7429">
+                    <img src="./assets/locations/borneo/originals/dsc-7429.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7429" lang="cs">Vějířovec malajský</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="51" data-full="./assets/locations/borneo/originals/dsc-6778.webp" data-product-id="borneo-dsc-6778" aria-labelledby="caption-borneo-dsc-6778">
+                    <img src="./assets/locations/borneo/originals/dsc-6778.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6778" lang="cs">Vlha malajská</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="52" data-full="./assets/locations/borneo/originals/dsc-6196.webp" data-product-id="borneo-dsc-6196" aria-labelledby="caption-borneo-dsc-6196">
+                    <img src="./assets/locations/borneo/originals/dsc-6196.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-6196" lang="cs">Volavka stříbřitá</figcaption>
+                </figure>
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locBorneo" data-sequence="53" data-full="./assets/locations/borneo/originals/dsc-7579.webp" data-product-id="borneo-dsc-7579" aria-labelledby="caption-borneo-dsc-7579">
+                    <img src="./assets/locations/borneo/originals/dsc-7579.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-borneo-dsc-7579" lang="cs">Majna chocholatá</figcaption>
+                </figure>
               </div>
             </div>
           </section>
@@ -232,17 +951,22 @@
               <header class="location-collection-heading reveal">
                 <span class="location-index">07</span>
                 <div><p data-i18n="collectionLabel">LOKALITA</p><h2 id="singapur-title" data-i18n="locSingapore">Singapur</h2></div>
-                <span data-i18n="twoPhotos">2 fotografie</span>
+                <span data-collection-count="2">2 fotografie</span>
               </header>
-              <div class="location-photo-grid">
-                <button class="location-photo-card reveal" type="button" data-location-key="locSingapore" data-sequence="01" data-full="./assets/locations/singapur/01.jpg" data-product-id="singapur-01">
-                  <img src="./assets/locations/singapur/01.jpg" alt="" loading="lazy" decoding="async">
-                  <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locSingapore">Singapur</small><strong>01</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
-                </button>
-                <button class="location-photo-card reveal" type="button" data-location-key="locSingapore" data-sequence="02" data-full="./assets/locations/singapur/02.jpg" data-product-id="singapur-02">
+              <div class="location-photo-grid location-photo-grid--catalog">
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locSingapore" data-sequence="01" data-full="./assets/locations/singapur/originals/dsc-7963.webp" data-product-id="singapur-01" aria-labelledby="caption-singapur-01">
+                    <img src="./assets/locations/singapur/originals/dsc-7963.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-singapur-01" lang="cs">Ledňáček černohlavý</figcaption>
+                </figure>
+                <div class="location-photo-item">
+                  <button class="location-photo-card reveal" type="button" data-location-key="locSingapore" data-sequence="02" data-full="./assets/locations/singapur/02.jpg" data-product-id="singapur-02">
                   <img src="./assets/locations/singapur/02.jpg" alt="" loading="lazy" decoding="async">
                   <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locSingapore">Singapur</small><strong>02</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
                 </button>
+                </div>
               </div>
             </div>
           </section>
@@ -252,17 +976,28 @@
               <header class="location-collection-heading reveal">
                 <span class="location-index">08</span>
                 <div><p data-i18n="collectionLabel">LOKALITA</p><h2 id="costarika-title" data-i18n="locCostaRica">Kostarika</h2></div>
-                <span data-i18n="twoPhotos">2 fotografie</span>
+                <span data-collection-count="3">3 fotografie</span>
               </header>
-              <div class="location-photo-grid">
-                <button class="location-photo-card reveal" type="button" data-location-key="locCostaRica" data-sequence="01" data-full="./assets/locations/costarika/01.jpg" data-product-id="costarika-01">
+              <div class="location-photo-grid location-photo-grid--catalog">
+                <figure class="location-photo-item">
+                  <button class="location-photo-card" type="button" data-location-key="locCostaRica" data-sequence="01" data-full="./assets/locations/costarika/originals/dsc-7114.webp" data-product-id="costarika-dsc-7114" aria-labelledby="caption-costarika-dsc-7114">
+                    <img src="./assets/locations/costarika/originals/dsc-7114.webp" alt="" width="1680" height="1120" loading="lazy" decoding="async">
+                    <span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
+                  </button>
+                  <figcaption class="location-photo-caption" id="caption-costarika-dsc-7114" lang="cs">Costa Rica</figcaption>
+                </figure>
+                <div class="location-photo-item">
+                  <button class="location-photo-card reveal" type="button" data-location-key="locCostaRica" data-sequence="01" data-full="./assets/locations/costarika/01.jpg" data-product-id="costarika-01">
                   <img src="./assets/locations/costarika/01.jpg" alt="" loading="lazy" decoding="async">
                   <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locCostaRica">Kostarika</small><strong>01</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
                 </button>
-                <button class="location-photo-card reveal" type="button" data-location-key="locCostaRica" data-sequence="02" data-full="./assets/locations/costarika/02.jpg" data-product-id="costarika-02">
+                </div>
+                <div class="location-photo-item">
+                  <button class="location-photo-card reveal" type="button" data-location-key="locCostaRica" data-sequence="02" data-full="./assets/locations/costarika/02.jpg" data-product-id="costarika-02">
                   <img src="./assets/locations/costarika/02.jpg" alt="" loading="lazy" decoding="async">
                   <span class="location-card-shade"></span><span class="location-card-meta"><small data-i18n="locCostaRica">Kostarika</small><strong>02</strong></span><span class="photo-open" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"></path></svg></span>
                 </button>
+                </div>
               </div>
             </div>
           </section>
