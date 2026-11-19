@@ -307,10 +307,15 @@
     currentLightboxIndex = (currentLightboxIndex + cards.length) % cards.length;
     var card = cards[currentLightboxIndex];
     lightboxImage.src = card.getAttribute("data-full");
-    var photoRef = card.getAttribute("data-photo-ref");
-    lightboxCategory.textContent = text(card.getAttribute("data-category-key"));
-    lightboxTitle.textContent = photoRef || text(card.getAttribute("data-title-key"));
-    lightboxImage.alt = photoRef ? lightboxCategory.textContent + ", " + photoRef : text(card.getAttribute("data-alt-key"));
+    var caption = card.querySelector("[data-photo-caption]");
+    var titleKey = card.getAttribute("data-title-key");
+    var category = text(card.getAttribute("data-category-key"));
+    lightboxCategory.textContent = category;
+    lightboxCategory.hidden = !caption && !titleKey;
+    lightboxTitle.textContent = caption ? caption.textContent : titleKey ? text(titleKey) : category;
+    lightboxTitle.lang = caption ? caption.lang : currentLanguage;
+    lightboxImage.lang = lightboxTitle.lang;
+    lightboxImage.alt = caption ? caption.textContent : titleKey ? text(card.getAttribute("data-alt-key")) : category;
   }
 
   function applyLanguage(language) {
